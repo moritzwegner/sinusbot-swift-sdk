@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E4A4C00256D07F700320D32 /* SinusbotSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4A4BF6256D07F700320D32 /* SinusbotSDK.framework */; };
+		8E4A4C05256D07F700320D32 /* SinusbotSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A4C04256D07F700320D32 /* SinusbotSDKTests.swift */; };
+		8E4A4C07256D07F700320D32 /* SinusbotSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E4A4BF9256D07F700320D32 /* SinusbotSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E4A4C14256D089100320D32 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8E4A4C13256D089100320D32 /* Alamofire */; };
+		8E4A4C18256D08DF00320D32 /* SinusbotSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A4C17256D08DF00320D32 /* SinusbotSDK.swift */; };
+		8E4C61BC256FAAB700D84651 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4C61BB256FAAB700D84651 /* LoginRequest.swift */; };
+		8E4C61C0256FAE1500D84651 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4C61BF256FAE1500D84651 /* LoginResponse.swift */; };
+		8E4C61C5256FEAD100D84651 /* Bot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4C61C4256FEAD100D84651 /* Bot.swift */; };
+		8E4C61C9256FEC9C00D84651 /* BotInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4C61C8256FEC9C00D84651 /* BotInfoResponse.swift */; };
+		8E4C61CD2570199700D84651 /* BotInstanceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4C61CC2570199700D84651 /* BotInstanceResponse.swift */; };
+		8E4C61D12570233D00D84651 /* CreateBotInstanceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4C61D02570233D00D84651 /* CreateBotInstanceRequest.swift */; };
+		8E4C61D52570246400D84651 /* CreateBotInstanceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4C61D42570246400D84651 /* CreateBotInstanceResponse.swift */; };
+		8E4C61D925702FB100D84651 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4C61D825702FB100D84651 /* Response.swift */; };
+		8E8A38A2256EC8F200E5CB36 /* DefaultBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A38A1256EC8F200E5CB36 /* DefaultBot.swift */; };
+		8E96C5152570F4E500056CD8 /* EditBotInstanceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E96C5142570F4E500056CD8 /* EditBotInstanceRequest.swift */; };
+		8E96C5192570F8F100056CD8 /* BotInstanceStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E96C5182570F8F100056CD8 /* BotInstanceStatusResponse.swift */; };
+		8E96C51D2570FB1700056CD8 /* CurrentTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E96C51C2570FB1700056CD8 /* CurrentTrack.swift */; };
+		8E96C5212570FDAA00056CD8 /* ConnStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E96C5202570FDAA00056CD8 /* ConnStatus.swift */; };
+		8E96C525257124E200056CD8 /* RecentPlayedTracksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E96C524257124E200056CD8 /* RecentPlayedTracksResponse.swift */; };
+		8E96C52925713BE400056CD8 /* BotInstanceLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E96C52825713BE400056CD8 /* BotInstanceLog.swift */; };
+		8E96C52D25713C3F00056CD8 /* BotInstanceLogResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E96C52C25713C3F00056CD8 /* BotInstanceLogResponse.swift */; };
+		8E96C53125714B0500056CD8 /* SinusbotUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E96C53025714B0500056CD8 /* SinusbotUser.swift */; };
+		8E96C53725714CCA00056CD8 /* SinusbotUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E96C53625714CCA00056CD8 /* SinusbotUserResponse.swift */; };
+		8E96C53B25714E0D00056CD8 /* CreateSinusbotUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E96C53A25714E0D00056CD8 /* CreateSinusbotUserRequest.swift */; };
+		8E96C53F2571527200056CD8 /* TeamspeakChannelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E96C53E2571527200056CD8 /* TeamspeakChannelResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E4A4C01256D07F700320D32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E4A4BED256D07F700320D32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E4A4BF5256D07F700320D32;
+			remoteInfo = SinusbotSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E4A4BF6256D07F700320D32 /* SinusbotSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SinusbotSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4A4BF9256D07F700320D32 /* SinusbotSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinusbotSDK.h; sourceTree = "<group>"; };
+		8E4A4BFA256D07F700320D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E4A4BFF256D07F700320D32 /* SinusbotSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinusbotSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4A4C04256D07F700320D32 /* SinusbotSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinusbotSDKTests.swift; sourceTree = "<group>"; };
+		8E4A4C06256D07F700320D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E4A4C17256D08DF00320D32 /* SinusbotSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinusbotSDK.swift; sourceTree = "<group>"; };
+		8E4C61BB256FAAB700D84651 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		8E4C61BF256FAE1500D84651 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		8E4C61C4256FEAD100D84651 /* Bot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bot.swift; sourceTree = "<group>"; };
+		8E4C61C8256FEC9C00D84651 /* BotInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotInfoResponse.swift; sourceTree = "<group>"; };
+		8E4C61CC2570199700D84651 /* BotInstanceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotInstanceResponse.swift; sourceTree = "<group>"; };
+		8E4C61D02570233D00D84651 /* CreateBotInstanceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBotInstanceRequest.swift; sourceTree = "<group>"; };
+		8E4C61D42570246400D84651 /* CreateBotInstanceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBotInstanceResponse.swift; sourceTree = "<group>"; };
+		8E4C61D825702FB100D84651 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		8E8A38A1256EC8F200E5CB36 /* DefaultBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBot.swift; sourceTree = "<group>"; };
+		8E96C5142570F4E500056CD8 /* EditBotInstanceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBotInstanceRequest.swift; sourceTree = "<group>"; };
+		8E96C5182570F8F100056CD8 /* BotInstanceStatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotInstanceStatusResponse.swift; sourceTree = "<group>"; };
+		8E96C51C2570FB1700056CD8 /* CurrentTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTrack.swift; sourceTree = "<group>"; };
+		8E96C5202570FDAA00056CD8 /* ConnStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnStatus.swift; sourceTree = "<group>"; };
+		8E96C524257124E200056CD8 /* RecentPlayedTracksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentPlayedTracksResponse.swift; sourceTree = "<group>"; };
+		8E96C52825713BE400056CD8 /* BotInstanceLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotInstanceLog.swift; sourceTree = "<group>"; };
+		8E96C52C25713C3F00056CD8 /* BotInstanceLogResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotInstanceLogResponse.swift; sourceTree = "<group>"; };
+		8E96C53025714B0500056CD8 /* SinusbotUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinusbotUser.swift; sourceTree = "<group>"; };
+		8E96C53625714CCA00056CD8 /* SinusbotUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinusbotUserResponse.swift; sourceTree = "<group>"; };
+		8E96C53A25714E0D00056CD8 /* CreateSinusbotUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSinusbotUserRequest.swift; sourceTree = "<group>"; };
+		8E96C53E2571527200056CD8 /* TeamspeakChannelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamspeakChannelResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E4A4BF3256D07F700320D32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4A4C14256D089100320D32 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E4A4BFC256D07F700320D32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4A4C00256D07F700320D32 /* SinusbotSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E4A4BEC256D07F700320D32 = {
+			isa = PBXGroup;
+			children = (
+				8E4A4BF8256D07F700320D32 /* SinusbotSDK */,
+				8E4A4C03256D07F700320D32 /* SinusbotSDKTests */,
+				8E4A4BF7256D07F700320D32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E4A4BF7256D07F700320D32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E4A4BF6256D07F700320D32 /* SinusbotSDK.framework */,
+				8E4A4BFF256D07F700320D32 /* SinusbotSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E4A4BF8256D07F700320D32 /* SinusbotSDK */ = {
+			isa = PBXGroup;
+			children = (
+				8E8A38A0256EC8C400E5CB36 /* domain */,
+				8E4A4BF9256D07F700320D32 /* SinusbotSDK.h */,
+				8E4A4BFA256D07F700320D32 /* Info.plist */,
+				8E4A4C17256D08DF00320D32 /* SinusbotSDK.swift */,
+			);
+			path = SinusbotSDK;
+			sourceTree = "<group>";
+		};
+		8E4A4C03256D07F700320D32 /* SinusbotSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E4A4C04256D07F700320D32 /* SinusbotSDKTests.swift */,
+				8E4A4C06256D07F700320D32 /* Info.plist */,
+			);
+			path = SinusbotSDKTests;
+			sourceTree = "<group>";
+		};
+		8E8A38A0256EC8C400E5CB36 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				8E8A38A1256EC8F200E5CB36 /* DefaultBot.swift */,
+				8E4C61BB256FAAB700D84651 /* LoginRequest.swift */,
+				8E4C61BF256FAE1500D84651 /* LoginResponse.swift */,
+				8E4C61C4256FEAD100D84651 /* Bot.swift */,
+				8E4C61C8256FEC9C00D84651 /* BotInfoResponse.swift */,
+				8E4C61CC2570199700D84651 /* BotInstanceResponse.swift */,
+				8E4C61D02570233D00D84651 /* CreateBotInstanceRequest.swift */,
+				8E4C61D42570246400D84651 /* CreateBotInstanceResponse.swift */,
+				8E4C61D825702FB100D84651 /* Response.swift */,
+				8E96C5142570F4E500056CD8 /* EditBotInstanceRequest.swift */,
+				8E96C5182570F8F100056CD8 /* BotInstanceStatusResponse.swift */,
+				8E96C51C2570FB1700056CD8 /* CurrentTrack.swift */,
+				8E96C5202570FDAA00056CD8 /* ConnStatus.swift */,
+				8E96C524257124E200056CD8 /* RecentPlayedTracksResponse.swift */,
+				8E96C52825713BE400056CD8 /* BotInstanceLog.swift */,
+				8E96C52C25713C3F00056CD8 /* BotInstanceLogResponse.swift */,
+				8E96C53025714B0500056CD8 /* SinusbotUser.swift */,
+				8E96C53625714CCA00056CD8 /* SinusbotUserResponse.swift */,
+				8E96C53A25714E0D00056CD8 /* CreateSinusbotUserRequest.swift */,
+				8E96C53E2571527200056CD8 /* TeamspeakChannelResponse.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8E4A4BF1256D07F700320D32 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4A4C07256D07F700320D32 /* SinusbotSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8E4A4BF5256D07F700320D32 /* SinusbotSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E4A4C0A256D07F700320D32 /* Build configuration list for PBXNativeTarget "SinusbotSDK" */;
+			buildPhases = (
+				8E4A4BF1256D07F700320D32 /* Headers */,
+				8E4A4BF2256D07F700320D32 /* Sources */,
+				8E4A4BF3256D07F700320D32 /* Frameworks */,
+				8E4A4BF4256D07F700320D32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SinusbotSDK;
+			packageProductDependencies = (
+				8E4A4C13256D089100320D32 /* Alamofire */,
+			);
+			productName = SinusbotSDK;
+			productReference = 8E4A4BF6256D07F700320D32 /* SinusbotSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8E4A4BFE256D07F700320D32 /* SinusbotSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E4A4C0D256D07F700320D32 /* Build configuration list for PBXNativeTarget "SinusbotSDKTests" */;
+			buildPhases = (
+				8E4A4BFB256D07F700320D32 /* Sources */,
+				8E4A4BFC256D07F700320D32 /* Frameworks */,
+				8E4A4BFD256D07F700320D32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E4A4C02256D07F700320D32 /* PBXTargetDependency */,
+			);
+			name = SinusbotSDKTests;
+			productName = SinusbotSDKTests;
+			productReference = 8E4A4BFF256D07F700320D32 /* SinusbotSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E4A4BED256D07F700320D32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					8E4A4BF5256D07F700320D32 = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+					8E4A4BFE256D07F700320D32 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 8E4A4BF0256D07F700320D32 /* Build configuration list for PBXProject "SinusbotSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E4A4BEC256D07F700320D32;
+			packageReferences = (
+				8E4A4C12256D089100320D32 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 8E4A4BF7256D07F700320D32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E4A4BF5256D07F700320D32 /* SinusbotSDK */,
+				8E4A4BFE256D07F700320D32 /* SinusbotSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E4A4BF4256D07F700320D32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E4A4BFD256D07F700320D32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E4A4BF2256D07F700320D32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4C61D12570233D00D84651 /* CreateBotInstanceRequest.swift in Sources */,
+				8E96C5152570F4E500056CD8 /* EditBotInstanceRequest.swift in Sources */,
+				8E96C52D25713C3F00056CD8 /* BotInstanceLogResponse.swift in Sources */,
+				8E4C61CD2570199700D84651 /* BotInstanceResponse.swift in Sources */,
+				8E96C53125714B0500056CD8 /* SinusbotUser.swift in Sources */,
+				8E96C53B25714E0D00056CD8 /* CreateSinusbotUserRequest.swift in Sources */,
+				8E4C61BC256FAAB700D84651 /* LoginRequest.swift in Sources */,
+				8E96C53725714CCA00056CD8 /* SinusbotUserResponse.swift in Sources */,
+				8E96C53F2571527200056CD8 /* TeamspeakChannelResponse.swift in Sources */,
+				8E4A4C18256D08DF00320D32 /* SinusbotSDK.swift in Sources */,
+				8E96C5212570FDAA00056CD8 /* ConnStatus.swift in Sources */,
+				8E4C61D925702FB100D84651 /* Response.swift in Sources */,
+				8E4C61C0256FAE1500D84651 /* LoginResponse.swift in Sources */,
+				8E96C51D2570FB1700056CD8 /* CurrentTrack.swift in Sources */,
+				8E8A38A2256EC8F200E5CB36 /* DefaultBot.swift in Sources */,
+				8E96C525257124E200056CD8 /* RecentPlayedTracksResponse.swift in Sources */,
+				8E96C52925713BE400056CD8 /* BotInstanceLog.swift in Sources */,
+				8E4C61D52570246400D84651 /* CreateBotInstanceResponse.swift in Sources */,
+				8E4C61C9256FEC9C00D84651 /* BotInfoResponse.swift in Sources */,
+				8E4C61C5256FEAD100D84651 /* Bot.swift in Sources */,
+				8E96C5192570F8F100056CD8 /* BotInstanceStatusResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E4A4BFB256D07F700320D32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4A4C05256D07F700320D32 /* SinusbotSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E4A4C02256D07F700320D32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E4A4BF5256D07F700320D32 /* SinusbotSDK */;
+			targetProxy = 8E4A4C01256D07F700320D32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8E4A4C08256D07F700320D32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8E4A4C09256D07F700320D32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E4A4C0B256D07F700320D32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 74X589Q6SX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SinusbotSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.nerogames.ios.SinusbotSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E4A4C0C256D07F700320D32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 74X589Q6SX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SinusbotSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.nerogames.ios.SinusbotSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8E4A4C0E256D07F700320D32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74X589Q6SX;
+				INFOPLIST_FILE = SinusbotSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.nerogames.ios.SinusbotSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E4A4C0F256D07F700320D32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74X589Q6SX;
+				INFOPLIST_FILE = SinusbotSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.nerogames.ios.SinusbotSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E4A4BF0256D07F700320D32 /* Build configuration list for PBXProject "SinusbotSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4A4C08256D07F700320D32 /* Debug */,
+				8E4A4C09256D07F700320D32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E4A4C0A256D07F700320D32 /* Build configuration list for PBXNativeTarget "SinusbotSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4A4C0B256D07F700320D32 /* Debug */,
+				8E4A4C0C256D07F700320D32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E4A4C0D256D07F700320D32 /* Build configuration list for PBXNativeTarget "SinusbotSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4A4C0E256D07F700320D32 /* Debug */,
+				8E4A4C0F256D07F700320D32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8E4A4C12256D089100320D32 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8E4A4C13256D089100320D32 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E4A4C12256D089100320D32 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8E4A4BED256D07F700320D32 /* Project object */;
+}
