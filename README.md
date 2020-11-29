@@ -8,7 +8,7 @@ To use this SDK you need to import SinusbotSDK in your Swift code:
 import SinusbotSDK
 ```
 
-Next step is to initialize an new SinusbotSDK instance:
+Next step is to initialize a new SinusbotSDK instance:
 
 ```Swift
 let sinusbotSDK = SinusbotSDK(host: "HOST", username: "USERNAME", password: "PASSWORD")
