@@ -38,14 +38,14 @@ somewhere in your code. Otherwise all other methods won't work
 | FileList -> Add an URL                         |      ✅      |    ❌   | addUrl()                                |
 | FileList -> Create folder                      |      ✅      |    ❌   | addFolder()                             |
 | FileList -> Delete File                        |      ✅      |    ❌   | deleteFile()                            |
-| FileList -> List                               |      ✅      |    ❌   | getFileList                             |
+| FileList -> List                               |      ✅      |    ❌   | getFileList()                           |
 | FileList -> Update file (tags)                 |      ❌      |    ❌   |                                         |
 | FileList -> Upload a file                      |      ❌      |    ❌   |                                         |
 | FileList -> Upload restrictions                |      ❌      |    ❌   |                                         |
 | Playback -> Decrease volume by 5%              |      ✅      |    ❌   | decreaseVolumeBy5()                     |
 | Playback -> Enable/Disable mute                |      ✅      |    ❌   | muteBotInstance() / unmuteBotInstance() |
 | Playback -> Increase volume by 5%              |      ✅      |    ❌   | increaseVolumeBy5()                     |
-| Playback -> Pause Playback                     |      ✅      |    ❌   | pauseBotInstancePlayback                |
+| Playback -> Pause Playback                     |      ✅      |    ❌   | pauseBotInstancePlayback()              |
 | Playback -> Playback URL                       |      ❌      |    ❌   |                                         |
 | Playback -> Playback a file inside a playlist  |      ❌      |    ❌   |                                         |
 | Playback -> Playback a file                    |      ❌      |    ❌   |                                         |
@@ -78,7 +78,7 @@ somewhere in your code. Otherwise all other methods won't work
 | Upload and Download -> List Jobs               |      ❌      |    ❌   |                                         |
 | Upload and Download -> Remove finished entries |      ❌      |    ❌   |                                         |
 | Users -> Create                                |      ✅      |    ✅   | createUser()                            |
-| Users -> Delete                                |      ✅      |    ❌   | deleteUser                              |
+| Users -> Delete                                |      ✅      |    ❌   | deleteUser()                            |
 | Users -> List                                  |      ✅      |    ✅   | getUsers()                              |
 | Users -> Update Instance Privileges            |      ❌      |    ❌   |                                         |
 | Users -> Update                                |      ❌      |    ❌   |                                         |
