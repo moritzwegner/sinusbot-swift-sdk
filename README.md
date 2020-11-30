@@ -35,10 +35,10 @@ somewhere in your code. Otherwise all other methods won't work
 | Instances -> Settings                          |      ✅      |    ❌   | editBotInstance()                       |
 | Instances -> Shutdown                          |      ✅      |    ❌   | killBotInstance()                       |
 | Instances -> Status                            |      ✅      |    ✅   | getBotInstanceStatus()                  |
-| FileList -> Add an URL                         |      ❌      |    ❌   |                                         |
-| FileList -> Create folder                      |      ❌      |    ❌   |                                         |
-| FileList -> Delete File                        |      ❌      |    ❌   |                                         |
-| FileList -> List                               |      ❌      |    ❌   |                                         |
+| FileList -> Add an URL                         |      ✅      |    ❌   | addUrl()                                |
+| FileList -> Create folder                      |      ✅      |    ❌   | addFolder()                             |
+| FileList -> Delete File                        |      ✅      |    ❌   | deleteFile()                            |
+| FileList -> List                               |      ✅      |    ❌   | getFileList                             |
 | FileList -> Update file (tags)                 |      ❌      |    ❌   |                                         |
 | FileList -> Upload a file                      |      ❌      |    ❌   |                                         |
 | FileList -> Upload restrictions                |      ❌      |    ❌   |                                         |
