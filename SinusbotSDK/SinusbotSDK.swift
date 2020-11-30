@@ -285,4 +285,48 @@ public class SinusbotSDK {
             completion(teamspeakChannelResponse, nil)
         }
     }
+    
+    public func addUrl(addUrlRequest: AddUrlRequest, completion: @escaping (Response?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/url",
+                   method: .post,
+                   parameters: addUrlRequest,
+                   encoder: JSONParameterEncoder.default,
+                   headers: self.headers
+        ).validate().responseDecodable(of: Response.self) {
+            response in guard let addUrlResponse = response.value else {completion(nil, response.error); return}
+            completion(addUrlResponse, nil)
+        }
+    }
+    
+    public func addFolder(addFolderRequest: AddFolderRequest, completion: @escaping (Response?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/folders",
+                   method: .post,
+                   parameters: addFolderRequest,
+                   encoder: JSONParameterEncoder.default,
+                   headers: self.headers
+        ).validate().responseDecodable(of: Response.self) {
+            response in guard let addFolderResponse = response.value else {completion(nil, response.error); return}
+            completion(addFolderResponse, nil)
+        }
+    }
+    
+    public func deleteFile(fileId: String, completion: @escaping (Response?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/files/" + fileId,
+                   method: .delete,
+                   headers: self.headers
+        ).validate().responseDecodable(of: Response.self) {
+            response in guard let deleteFileResponse = response.value else {completion(nil, response.error); return}
+            completion(deleteFileResponse, nil)
+        }
+    }
+    
+    public func getFileList(completion: @escaping (FileListResponse?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/files",
+                   method: .get,
+                   headers: self.headers
+        ).validate().responseDecodable(of: FileListResponse.self) {
+            response in guard let fileListResponse = response.value else {completion(nil, response.error); return}
+            completion(fileListResponse, nil)
+        }
+    }
 }

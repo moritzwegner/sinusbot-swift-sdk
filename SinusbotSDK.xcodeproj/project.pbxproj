@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E42A0D025758317003ACDF2 /* AddUrlRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E42A0CF25758317003ACDF2 /* AddUrlRequest.swift */; };
+		8E42A0D4257583E2003ACDF2 /* AddFolderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E42A0D3257583E2003ACDF2 /* AddFolderRequest.swift */; };
+		8E42A0D825758B19003ACDF2 /* MediaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E42A0D725758B19003ACDF2 /* MediaInfo.swift */; };
+		8E42A0DC25758C4F003ACDF2 /* FileListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E42A0DB25758C4F003ACDF2 /* FileListResponse.swift */; };
 		8E4A4C00256D07F700320D32 /* SinusbotSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4A4BF6256D07F700320D32 /* SinusbotSDK.framework */; };
 		8E4A4C05256D07F700320D32 /* SinusbotSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A4C04256D07F700320D32 /* SinusbotSDKTests.swift */; };
 		8E4A4C07256D07F700320D32 /* SinusbotSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E4A4BF9256D07F700320D32 /* SinusbotSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -45,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E42A0CF25758317003ACDF2 /* AddUrlRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUrlRequest.swift; sourceTree = "<group>"; };
+		8E42A0D3257583E2003ACDF2 /* AddFolderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolderRequest.swift; sourceTree = "<group>"; };
+		8E42A0D725758B19003ACDF2 /* MediaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaInfo.swift; sourceTree = "<group>"; };
+		8E42A0DB25758C4F003ACDF2 /* FileListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListResponse.swift; sourceTree = "<group>"; };
 		8E4A4BF6256D07F700320D32 /* SinusbotSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SinusbotSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E4A4BF9256D07F700320D32 /* SinusbotSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinusbotSDK.h; sourceTree = "<group>"; };
 		8E4A4BFA256D07F700320D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -155,6 +163,10 @@
 				8E96C53625714CCA00056CD8 /* SinusbotUserResponse.swift */,
 				8E96C53A25714E0D00056CD8 /* CreateSinusbotUserRequest.swift */,
 				8E96C53E2571527200056CD8 /* TeamspeakChannelResponse.swift */,
+				8E42A0CF25758317003ACDF2 /* AddUrlRequest.swift */,
+				8E42A0D3257583E2003ACDF2 /* AddFolderRequest.swift */,
+				8E42A0D725758B19003ACDF2 /* MediaInfo.swift */,
+				8E42A0DB25758C4F003ACDF2 /* FileListResponse.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -276,6 +288,7 @@
 			files = (
 				8E4C61D12570233D00D84651 /* CreateBotInstanceRequest.swift in Sources */,
 				8E96C5152570F4E500056CD8 /* EditBotInstanceRequest.swift in Sources */,
+				8E42A0D4257583E2003ACDF2 /* AddFolderRequest.swift in Sources */,
 				8E96C52D25713C3F00056CD8 /* BotInstanceLogResponse.swift in Sources */,
 				8E4C61CD2570199700D84651 /* BotInstanceResponse.swift in Sources */,
 				8E96C53125714B0500056CD8 /* SinusbotUser.swift in Sources */,
@@ -287,10 +300,13 @@
 				8E96C5212570FDAA00056CD8 /* ConnStatus.swift in Sources */,
 				8E4C61D925702FB100D84651 /* Response.swift in Sources */,
 				8E4C61C0256FAE1500D84651 /* LoginResponse.swift in Sources */,
+				8E42A0D825758B19003ACDF2 /* MediaInfo.swift in Sources */,
+				8E42A0DC25758C4F003ACDF2 /* FileListResponse.swift in Sources */,
 				8E96C51D2570FB1700056CD8 /* CurrentTrack.swift in Sources */,
 				8E8A38A2256EC8F200E5CB36 /* DefaultBot.swift in Sources */,
 				8E96C525257124E200056CD8 /* RecentPlayedTracksResponse.swift in Sources */,
 				8E96C52925713BE400056CD8 /* BotInstanceLog.swift in Sources */,
+				8E42A0D025758317003ACDF2 /* AddUrlRequest.swift in Sources */,
 				8E4C61D52570246400D84651 /* CreateBotInstanceResponse.swift in Sources */,
 				8E4C61C9256FEC9C00D84651 /* BotInfoResponse.swift in Sources */,
 				8E4C61C5256FEAD100D84651 /* Bot.swift in Sources */,
