@@ -329,4 +329,16 @@ public class SinusbotSDK {
             completion(fileListResponse, nil)
         }
     }
+    
+    public func updateFileTags(fileId: String, updateFileTagsRequest: UpdateFileTagsRequest, completion: @escaping (Response?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/files/" + fileId,
+                   method: .patch,
+                   parameters: updateFileTagsRequest,
+                   encoder: JSONParameterEncoder.default,
+                   headers: self.headers
+        ).validate().responseDecodable(of: Response.self) {
+            response in guard let updateFileTagsResponse = response.value else {completion(nil, response.error); return}
+            completion(updateFileTagsResponse, nil)
+        }
+    }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		419848862584000900ED1CE2 /* UpdateFileTagsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419848852584000900ED1CE2 /* UpdateFileTagsRequest.swift */; };
 		8E42A0D025758317003ACDF2 /* AddUrlRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E42A0CF25758317003ACDF2 /* AddUrlRequest.swift */; };
 		8E42A0D4257583E2003ACDF2 /* AddFolderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E42A0D3257583E2003ACDF2 /* AddFolderRequest.swift */; };
 		8E42A0D825758B19003ACDF2 /* MediaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E42A0D725758B19003ACDF2 /* MediaInfo.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		419848852584000900ED1CE2 /* UpdateFileTagsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateFileTagsRequest.swift; sourceTree = "<group>"; };
 		8E42A0CF25758317003ACDF2 /* AddUrlRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUrlRequest.swift; sourceTree = "<group>"; };
 		8E42A0D3257583E2003ACDF2 /* AddFolderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolderRequest.swift; sourceTree = "<group>"; };
 		8E42A0D725758B19003ACDF2 /* MediaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaInfo.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				8E42A0D3257583E2003ACDF2 /* AddFolderRequest.swift */,
 				8E42A0D725758B19003ACDF2 /* MediaInfo.swift */,
 				8E42A0DB25758C4F003ACDF2 /* FileListResponse.swift */,
+				419848852584000900ED1CE2 /* UpdateFileTagsRequest.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				8E96C53725714CCA00056CD8 /* SinusbotUserResponse.swift in Sources */,
 				8E96C53F2571527200056CD8 /* TeamspeakChannelResponse.swift in Sources */,
 				8E4A4C18256D08DF00320D32 /* SinusbotSDK.swift in Sources */,
+				419848862584000900ED1CE2 /* UpdateFileTagsRequest.swift in Sources */,
 				8E96C5212570FDAA00056CD8 /* ConnStatus.swift in Sources */,
 				8E4C61D925702FB100D84651 /* Response.swift in Sources */,
 				8E4C61C0256FAE1500D84651 /* LoginResponse.swift in Sources */,
