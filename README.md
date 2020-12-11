@@ -39,7 +39,7 @@ somewhere in your code. Otherwise all other methods won't work
 | FileList -> Create folder                      |      ✅      |    ❌   | addFolder()                             |
 | FileList -> Delete File                        |      ✅      |    ❌   | deleteFile()                            |
 | FileList -> List                               |      ✅      |    ❌   | getFileList()                           |
-| FileList -> Update file (tags)                 |      ❌      |    ❌   |                                         |
+| FileList -> Update file (tags)                 |      ✅      |    ❌   | updateFileTags()                                        |
 | FileList -> Upload a file                      |      ❌      |    ❌   |                                         |
 | FileList -> Upload restrictions                |      ❌      |    ❌   |                                         |
 | Playback -> Decrease volume by 5%              |      ✅      |    ❌   | decreaseVolumeBy5()                     |
