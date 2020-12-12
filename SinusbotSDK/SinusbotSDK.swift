@@ -361,4 +361,16 @@ public class SinusbotSDK {
             completion(removeAvatarResponse, nil)
         }
     }
+    
+    public func addDownloadJob(addDownloadJobRequest: AddDownloadJobRequest, completion: @escaping (AddDownloadJobResponse?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/jobs",
+                   method: .post,
+                   parameters: addDownloadJobRequest,
+                   encoder: JSONParameterEncoder.default,
+                   headers: self.headers
+        ).validate().responseDecodable(of: AddDownloadJobResponse.self) {
+            response in guard let addDownloadJobResponse = response.value else {completion(nil, response.error); return}
+            completion(addDownloadJobResponse, nil)
+        }
+    }
 }

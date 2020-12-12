@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		418632F5258516AF002B13AC /* AddDownloadJobRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418632F4258516AF002B13AC /* AddDownloadJobRequest.swift */; };
+		418632F9258517ED002B13AC /* AddDownloadJobResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418632F8258517ED002B13AC /* AddDownloadJobResponse.swift */; };
 		419848862584000900ED1CE2 /* UpdateFileTagsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419848852584000900ED1CE2 /* UpdateFileTagsRequest.swift */; };
 		8E42A0D025758317003ACDF2 /* AddUrlRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E42A0CF25758317003ACDF2 /* AddUrlRequest.swift */; };
 		8E42A0D4257583E2003ACDF2 /* AddFolderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E42A0D3257583E2003ACDF2 /* AddFolderRequest.swift */; };
@@ -50,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		418632F4258516AF002B13AC /* AddDownloadJobRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDownloadJobRequest.swift; sourceTree = "<group>"; };
+		418632F8258517ED002B13AC /* AddDownloadJobResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDownloadJobResponse.swift; sourceTree = "<group>"; };
 		419848852584000900ED1CE2 /* UpdateFileTagsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateFileTagsRequest.swift; sourceTree = "<group>"; };
 		8E42A0CF25758317003ACDF2 /* AddUrlRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUrlRequest.swift; sourceTree = "<group>"; };
 		8E42A0D3257583E2003ACDF2 /* AddFolderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolderRequest.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 				8E42A0D725758B19003ACDF2 /* MediaInfo.swift */,
 				8E42A0DB25758C4F003ACDF2 /* FileListResponse.swift */,
 				419848852584000900ED1CE2 /* UpdateFileTagsRequest.swift */,
+				418632F4258516AF002B13AC /* AddDownloadJobRequest.swift */,
+				418632F8258517ED002B13AC /* AddDownloadJobResponse.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 				8E96C5152570F4E500056CD8 /* EditBotInstanceRequest.swift in Sources */,
 				8E42A0D4257583E2003ACDF2 /* AddFolderRequest.swift in Sources */,
 				8E96C52D25713C3F00056CD8 /* BotInstanceLogResponse.swift in Sources */,
+				418632F5258516AF002B13AC /* AddDownloadJobRequest.swift in Sources */,
 				8E4C61CD2570199700D84651 /* BotInstanceResponse.swift in Sources */,
 				8E96C53125714B0500056CD8 /* SinusbotUser.swift in Sources */,
 				8E96C53B25714E0D00056CD8 /* CreateSinusbotUserRequest.swift in Sources */,
@@ -314,6 +321,7 @@
 				8E4C61D52570246400D84651 /* CreateBotInstanceResponse.swift in Sources */,
 				8E4C61C9256FEC9C00D84651 /* BotInfoResponse.swift in Sources */,
 				8E4C61C5256FEAD100D84651 /* Bot.swift in Sources */,
+				418632F9258517ED002B13AC /* AddDownloadJobResponse.swift in Sources */,
 				8E96C5192570F8F100056CD8 /* BotInstanceStatusResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
