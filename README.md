@@ -58,7 +58,7 @@ somewhere in your code. Otherwise all other methods won't work
 | Avatars -> Upload avatar                       |      ❌      |    ❌   |                                         |
 | Logging -> Instance-Log                        |      ✅      |    ✅   | getBotInstanceLogs()                    |
 | Logging -> Recent Bot-Log entries              |      ✅      |    ✅   | getRecentLogs()                         |
-| Playlists -> Enable/Disable repeat             |      ❌      |    ❌   |                                         |
+| Playlists -> Enable/Disable repeat             |      ✅      |    ❌   | enablePlaylistRepeat() / disablePlaylistRepeat()                                        |
 | Playlists -> Enable/Disable shuffle            |      ❌      |    ❌   |                                         |
 | Playlists -> Next                              |      ❌      |    ❌   |                                         |
 | Playlists -> Previous                          |      ❌      |    ❌   |                                         |
