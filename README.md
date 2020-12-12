@@ -41,7 +41,7 @@ somewhere in your code. Otherwise all other methods won't work
 | FileList -> List                               |      ✅      |    ❌   | getFileList()                           |
 | FileList -> Update file (tags)                 |      ✅      |    ❌   | updateFileTags()                                        |
 | FileList -> Upload a file                      |      ❌      |    ❌   |                                         |
-| FileList -> Upload restrictions                |      ❌      |    ❌   |                                         |
+| FileList -> Upload restrictions                |      ✅      |    ❌   | getUploadRestrictions()                                        |
 | Playback -> Decrease volume by 5%              |      ✅      |    ❌   | decreaseVolumeBy5()                     |
 | Playback -> Enable/Disable mute                |      ✅      |    ❌   | muteBotInstance() / unmuteBotInstance() |
 | Playback -> Increase volume by 5%              |      ✅      |    ❌   | increaseVolumeBy5()                     |
