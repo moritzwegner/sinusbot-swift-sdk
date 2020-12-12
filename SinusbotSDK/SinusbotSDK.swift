@@ -393,4 +393,14 @@ public class SinusbotSDK {
             completion(downloadJobListResponse, nil)
         }
     }
+    
+    public func deleteFinishedJobEntries(completion: @escaping (Response?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/jobs/",
+                   method: .delete,
+                   headers: self.headers
+        ).validate().responseDecodable(of: Response.self) {
+            response in guard let deleteFinishedJobEntriesResponse = response.value else {completion(nil, response.error); return}
+            completion(deleteFinishedJobEntriesResponse, nil)
+        }
+    }
 }
