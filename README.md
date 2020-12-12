@@ -73,7 +73,7 @@ somewhere in your code. Otherwise all other methods won't work
 | Streaming -> Get a token for the WebStream     |      ❌      |    ❌   |                                         |
 | Streaming -> Get audio stream                  |      ❌      |    ❌   |                                         |
 | Teamspeak -> Channel list                      |      ✅      |    ✅   | getTeamspeakChannels()                  |
-| Upload and Download -> Add job                 |      ❌      |    ❌   |                                         |
+| Upload and Download -> Add job                 |      ✅      |    ❌   | addDownloadJob()                                        |
 | Upload and Download -> Cancel job              |      ❌      |    ❌   |                                         |
 | Upload and Download -> List Jobs               |      ❌      |    ❌   |                                         |
 | Upload and Download -> Remove finished entries |      ❌      |    ❌   |                                         |
