@@ -59,9 +59,9 @@ somewhere in your code. Otherwise all other methods won't work
 | Logging -> Instance-Log                        |      ✅      |    ✅   | getBotInstanceLogs()                    |
 | Logging -> Recent Bot-Log entries              |      ✅      |    ✅   | getRecentLogs()                         |
 | Playlists -> Enable/Disable repeat             |      ✅      |    ❌   | enablePlaylistRepeat() / disablePlaylistRepeat()                                        |
-| Playlists -> Enable/Disable shuffle            |      ❌      |    ❌   |                                         |
-| Playlists -> Next                              |      ❌      |    ❌   |                                         |
-| Playlists -> Previous                          |      ❌      |    ❌   |                                         |
+| Playlists -> Enable/Disable shuffle            |      ✅      |    ❌   | enablePlaylistShuffle() / disablePlaylistShuffle()                                        |
+| Playlists -> Next                              |      ✅      |    ❌   | playNextPlaylist()                                        |
+| Playlists -> Previous                          |      ✅      |    ❌   | playPreviousPlaylist()                                        |
 | Queue -> Append a track to the queue           |      ❌      |    ❌   |                                         |
 | Queue -> Get list                              |      ❌      |    ❌   |                                         |
 | Queue -> Prepend a track to the queue          |      ❌      |    ❌   |                                         |
