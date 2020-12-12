@@ -75,7 +75,7 @@ somewhere in your code. Otherwise all other methods won't work
 | Teamspeak -> Channel list                      |      ✅      |    ✅   | getTeamspeakChannels()                  |
 | Upload and Download -> Add job                 |      ✅      |    ❌   | addDownloadJob()                                        |
 | Upload and Download -> Cancel job              |      ✅      |    ❌   | cancelDownloadJob()                                        |
-| Upload and Download -> List Jobs               |      ❌      |    ❌   |                                         |
+| Upload and Download -> List Jobs               |      ✅      |    ❌   | getDownloadJobList()                                        |
 | Upload and Download -> Remove finished entries |      ❌      |    ❌   |                                         |
 | Users -> Create                                |      ✅      |    ✅   | createUser()                            |
 | Users -> Delete                                |      ✅      |    ❌   | deleteUser()                            |
