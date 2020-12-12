@@ -403,4 +403,24 @@ public class SinusbotSDK {
             completion(deleteFinishedJobEntriesResponse, nil)
         }
     }
+    
+    public func enablePlaylistRepeat(botInstanceUuid: String, completion: @escaping (Response?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/i/" + botInstanceUuid + "/repeat/1",
+                   method: .post,
+                   headers: self.headers
+        ).validate().responseDecodable(of: Response.self) {
+            response in guard let enablePlaylistRepeatResponse = response.value else {completion(nil, response.error); return}
+            completion(enablePlaylistRepeatResponse, nil)
+        }
+    }
+    
+    public func disablePlaylistRepeat(botInstanceUuid: String, completion: @escaping (Response?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/i/" + botInstanceUuid + "/repeat/0",
+                   method: .post,
+                   headers: self.headers
+        ).validate().responseDecodable(of: Response.self) {
+            response in guard let disablePlaylistRepeatResponse = response.value else {completion(nil, response.error); return}
+            completion(disablePlaylistRepeatResponse, nil)
+        }
+    }
 }
