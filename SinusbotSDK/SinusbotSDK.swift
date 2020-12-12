@@ -351,4 +351,14 @@ public class SinusbotSDK {
             completion(uploadRestrictionsResponse, nil)
         }
     }
+    
+    public func removeAvatar(botInstanceUuid: String, completion: @escaping (Response?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/i/" + botInstanceUuid + "/avatar",
+                   method: .delete,
+                   headers: self.headers
+        ).validate().responseDecodable(of: Response.self) {
+            response in guard let removeAvatarResponse = response.value else {completion(nil, response.error); return}
+            completion(removeAvatarResponse, nil)
+        }
+    }
 }
