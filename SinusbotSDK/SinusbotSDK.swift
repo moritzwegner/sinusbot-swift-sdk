@@ -383,4 +383,14 @@ public class SinusbotSDK {
             completion(cnacelDownloadJobResponse, nil)
         }
     }
+    
+    public func getDownloadJobList(completion: @escaping ([DownloadJob]?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/jobs",
+                   method: .get,
+                   headers: self.headers
+        ).validate().responseDecodable(of: [DownloadJob].self) {
+            response in guard let downloadJobListResponse = response.value else {completion(nil, response.error); return}
+            completion(downloadJobListResponse, nil)
+        }
+    }
 }
