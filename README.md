@@ -54,7 +54,7 @@ somewhere in your code. Otherwise all other methods won't work
 | Playback -> Set the volume                     |      ✅      |    ❌   | setBotInstanceVolume()                  |
 | Playback -> Stop Playback                      |      ✅      |    ❌   | stopBotInstancePlayback()               |
 | Playback -> Recently played tracks             |      ✅      |    ❌   | getRecentPlayedTracksForBotInstance()   |
-| Avatars -> Remove avatar                       |      ❌      |    ❌   |                                         |
+| Avatars -> Remove avatar                       |      ✅      |    ❌   | removeAvatar()                                        |
 | Avatars -> Upload avatar                       |      ❌      |    ❌   |                                         |
 | Logging -> Instance-Log                        |      ✅      |    ✅   | getBotInstanceLogs()                    |
 | Logging -> Recent Bot-Log entries              |      ✅      |    ✅   | getRecentLogs()                         |
