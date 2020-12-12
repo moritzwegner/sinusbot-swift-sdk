@@ -76,7 +76,7 @@ somewhere in your code. Otherwise all other methods won't work
 | Upload and Download -> Add job                 |      ✅      |    ❌   | addDownloadJob()                                        |
 | Upload and Download -> Cancel job              |      ✅      |    ❌   | cancelDownloadJob()                                        |
 | Upload and Download -> List Jobs               |      ✅      |    ❌   | getDownloadJobList()                                        |
-| Upload and Download -> Remove finished entries |      ❌      |    ❌   |                                         |
+| Upload and Download -> Remove finished entries |      ✅      |    ❌   | deleteFinishedJobEntries()                                        |
 | Users -> Create                                |      ✅      |    ✅   | createUser()                            |
 | Users -> Delete                                |      ✅      |    ❌   | deleteUser()                            |
 | Users -> List                                  |      ✅      |    ✅   | getUsers()                              |
