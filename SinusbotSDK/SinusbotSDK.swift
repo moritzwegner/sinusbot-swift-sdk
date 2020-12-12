@@ -443,4 +443,24 @@ public class SinusbotSDK {
             completion(disablePlaylistShuffleResponse, nil)
         }
     }
+    
+    public func playNextPlaylist(botInstanceUuid: String, completion: @escaping (Response?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/i/" + botInstanceUuid + "/playNext",
+                   method: .post,
+                   headers: self.headers
+        ).validate().responseDecodable(of: Response.self) {
+            response in guard let playNextPlaylistResponse = response.value else {completion(nil, response.error); return}
+            completion(playNextPlaylistResponse, nil)
+        }
+    }
+    
+    public func playPreviousPlaylist(botInstanceUuid: String, completion: @escaping (Response?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/i/" + botInstanceUuid + "/playPrevious",
+                   method: .post,
+                   headers: self.headers
+        ).validate().responseDecodable(of: Response.self) {
+            response in guard let playPreviousPlaylistResponse = response.value else {completion(nil, response.error); return}
+            completion(playPreviousPlaylistResponse, nil)
+        }
+    }
 }
