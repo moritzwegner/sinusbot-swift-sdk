@@ -503,4 +503,14 @@ public class SinusbotSDK {
             completion(removeTrackFromQueueResponse, nil)
         }
     }
+    
+    public func getScriptList(completion: @escaping (ScriptListResponse?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/scripts",
+                   method: .get,
+                   headers: self.headers
+        ).validate().responseDecodable(of: ScriptListResponse.self) {
+            response in guard let getScriptListResponse = response.value else {completion(nil, response.error); return}
+            completion(getScriptListResponse, nil)
+        }
+    }
 }

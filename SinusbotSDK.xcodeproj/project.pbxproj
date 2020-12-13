@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4117C74925865FE60093DC13 /* QueueTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4117C74825865FE60093DC13 /* QueueTrack.swift */; };
+		4117C74D25866AA00093DC13 /* ScriptListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4117C74C25866AA00093DC13 /* ScriptListResponse.swift */; };
 		418632F5258516AF002B13AC /* AddDownloadJobRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418632F4258516AF002B13AC /* AddDownloadJobRequest.swift */; };
 		418632F9258517ED002B13AC /* AddDownloadJobResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418632F8258517ED002B13AC /* AddDownloadJobResponse.swift */; };
 		418632FF2585396E002B13AC /* DownloadJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418632FE2585396E002B13AC /* DownloadJob.swift */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		4117C74825865FE60093DC13 /* QueueTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTrack.swift; sourceTree = "<group>"; };
+		4117C74C25866AA00093DC13 /* ScriptListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptListResponse.swift; sourceTree = "<group>"; };
 		418632F4258516AF002B13AC /* AddDownloadJobRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDownloadJobRequest.swift; sourceTree = "<group>"; };
 		418632F8258517ED002B13AC /* AddDownloadJobResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDownloadJobResponse.swift; sourceTree = "<group>"; };
 		418632FE2585396E002B13AC /* DownloadJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadJob.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				418632F8258517ED002B13AC /* AddDownloadJobResponse.swift */,
 				418632FE2585396E002B13AC /* DownloadJob.swift */,
 				4117C74825865FE60093DC13 /* QueueTrack.swift */,
+				4117C74C25866AA00093DC13 /* ScriptListResponse.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				8E96C52925713BE400056CD8 /* BotInstanceLog.swift in Sources */,
 				8E42A0D025758317003ACDF2 /* AddUrlRequest.swift in Sources */,
 				8E4C61D52570246400D84651 /* CreateBotInstanceResponse.swift in Sources */,
+				4117C74D25866AA00093DC13 /* ScriptListResponse.swift in Sources */,
 				8E4C61C9256FEC9C00D84651 /* BotInfoResponse.swift in Sources */,
 				8E4C61C5256FEAD100D84651 /* Bot.swift in Sources */,
 				418632F9258517ED002B13AC /* AddDownloadJobResponse.swift in Sources */,
