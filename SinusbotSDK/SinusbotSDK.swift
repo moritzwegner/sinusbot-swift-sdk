@@ -523,4 +523,24 @@ public class SinusbotSDK {
             completion(getRadioStationsResponse, nil)
         }
     }
+    
+    public func playbackFile(botInstanceUuid: String, fileUuid: String, completion: @escaping (Response?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/i/" + botInstanceUuid + "/play/byId/" + fileUuid,
+                   method: .post,
+                   headers: self.headers
+        ).validate().responseDecodable(of: Response.self) {
+            response in guard let playbackFileResponse = response.value else {completion(nil, response.error); return}
+            completion(playbackFileResponse, nil)
+        }
+    }
+    
+    public func playbackFileInPlaylist(botInstanceUuid: String, playlistUuid: String, playlistTrackIndex: Int, completion: @escaping (Response?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/i/" + botInstanceUuid + "/play/byList/" + playlistUuid + "/" + String(playlistTrackIndex),
+                   method: .post,
+                   headers: self.headers
+        ).validate().responseDecodable(of: Response.self) {
+            response in guard let playbackFileInPlaylistResponse = response.value else {completion(nil, response.error); return}
+            completion(playbackFileInPlaylistResponse, nil)
+        }
+    }
 }
