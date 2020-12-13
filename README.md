@@ -65,7 +65,7 @@ somewhere in your code. Otherwise all other methods won't work
 | Queue -> Append a track to the queue           |      ✅      |    ❌   | appendTrackToQueue()                                        |
 | Queue -> Get list                              |      ✅      |    ❌   | getQueueList()                                        |
 | Queue -> Prepend a track to the queue          |      ✅      |    ❌   | prependTrackToQueue()                                        |
-| Queue -> Remove from queue                     |      ✅      |    ❌   | deleteTrackFromQueue()                                        |
+| Queue -> Remove from queue                     |      ✅      |    ❌   | removeTrackFromQueue()                                        |
 | Radio -> Get radio stations                    |      ❌      |    ❌   |                                         |
 | Scripts -> Get Settings                        |      ❌      |    ❌   |                                         |
 | Scripts -> List Scripts                        |      ❌      |    ❌   |                                         |
