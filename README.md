@@ -62,9 +62,9 @@ somewhere in your code. Otherwise all other methods won't work
 | Playlists -> Enable/Disable shuffle            |      ✅      |    ❌   | enablePlaylistShuffle() / disablePlaylistShuffle()                                        |
 | Playlists -> Next                              |      ✅      |    ❌   | playNextPlaylist()                                        |
 | Playlists -> Previous                          |      ✅      |    ❌   | playPreviousPlaylist()                                        |
-| Queue -> Append a track to the queue           |      ❌      |    ❌   |                                         |
+| Queue -> Append a track to the queue           |      ✅      |    ❌   | appendTrackToQueue()                                        |
 | Queue -> Get list                              |      ❌      |    ❌   |                                         |
-| Queue -> Prepend a track to the queue          |      ❌      |    ❌   |                                         |
+| Queue -> Prepend a track to the queue          |      ✅      |    ❌   | prependTrackToQueue()                                        |
 | Queue -> Remove from queue                     |      ❌      |    ❌   |                                         |
 | Radio -> Get radio stations                    |      ❌      |    ❌   |                                         |
 | Scripts -> Get Settings                        |      ❌      |    ❌   |                                         |
