@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4117C74925865FE60093DC13 /* QueueTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4117C74825865FE60093DC13 /* QueueTrack.swift */; };
 		418632F5258516AF002B13AC /* AddDownloadJobRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418632F4258516AF002B13AC /* AddDownloadJobRequest.swift */; };
 		418632F9258517ED002B13AC /* AddDownloadJobResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418632F8258517ED002B13AC /* AddDownloadJobResponse.swift */; };
 		418632FF2585396E002B13AC /* DownloadJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418632FE2585396E002B13AC /* DownloadJob.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4117C74825865FE60093DC13 /* QueueTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTrack.swift; sourceTree = "<group>"; };
 		418632F4258516AF002B13AC /* AddDownloadJobRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDownloadJobRequest.swift; sourceTree = "<group>"; };
 		418632F8258517ED002B13AC /* AddDownloadJobResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDownloadJobResponse.swift; sourceTree = "<group>"; };
 		418632FE2585396E002B13AC /* DownloadJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadJob.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				418632F4258516AF002B13AC /* AddDownloadJobRequest.swift */,
 				418632F8258517ED002B13AC /* AddDownloadJobResponse.swift */,
 				418632FE2585396E002B13AC /* DownloadJob.swift */,
+				4117C74825865FE60093DC13 /* QueueTrack.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				8E4C61BC256FAAB700D84651 /* LoginRequest.swift in Sources */,
 				8E96C53725714CCA00056CD8 /* SinusbotUserResponse.swift in Sources */,
 				8E96C53F2571527200056CD8 /* TeamspeakChannelResponse.swift in Sources */,
+				4117C74925865FE60093DC13 /* QueueTrack.swift in Sources */,
 				418632FF2585396E002B13AC /* DownloadJob.swift in Sources */,
 				8E4A4C18256D08DF00320D32 /* SinusbotSDK.swift in Sources */,
 				419848862584000900ED1CE2 /* UpdateFileTagsRequest.swift in Sources */,

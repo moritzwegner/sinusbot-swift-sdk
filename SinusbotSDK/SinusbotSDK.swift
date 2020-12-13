@@ -483,4 +483,14 @@ public class SinusbotSDK {
             completion(prependTrackToQueueResponse, nil)
         }
     }
+    
+    public func getQueueList(botInstanceUuid: String, completion: @escaping (QueueTrackListResponse?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/i/" + botInstanceUuid + "/queue",
+                   method: .get,
+                   headers: self.headers
+        ).validate().responseDecodable(of: QueueTrackListResponse.self) {
+            response in guard let getQueueListResponse = response.value else {completion(nil, response.error); return}
+            completion(getQueueListResponse, nil)
+        }
+    }
 }
