@@ -463,4 +463,24 @@ public class SinusbotSDK {
             completion(playPreviousPlaylistResponse, nil)
         }
     }
+    
+    public func appendTracktoQueue(botInstanceUuid: String, trackUuid: String, completion: @escaping (Response?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/i/" + botInstanceUuid + "/queue/append/" + trackUuid,
+                   method: .post,
+                   headers: self.headers
+        ).validate().responseDecodable(of: Response.self) {
+            response in guard let appendTrackToQueueResponse = response.value else {completion(nil, response.error); return}
+            completion(appendTrackToQueueResponse, nil)
+        }
+    }
+    
+    public func prependTracktoQueue(botInstanceUuid: String, trackUuid: String, completion: @escaping (Response?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/i/" + botInstanceUuid + "/queue/prepend/" + trackUuid,
+                   method: .post,
+                   headers: self.headers
+        ).validate().responseDecodable(of: Response.self) {
+            response in guard let prependTrackToQueueResponse = response.value else {completion(nil, response.error); return}
+            completion(prependTrackToQueueResponse, nil)
+        }
+    }
 }
