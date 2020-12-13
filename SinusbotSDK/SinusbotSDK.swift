@@ -494,13 +494,13 @@ public class SinusbotSDK {
         }
     }
     
-    public func deleteTrackFromQueue(botInstanceUuid: String, queuePosition: Int, completion: @escaping (Response?, Error?) -> Void) {
+    public func removeTrackFromQueue(botInstanceUuid: String, queuePosition: Int, completion: @escaping (Response?, Error?) -> Void) {
         AF.request(self.host + "/api/v1/bot/i/" + botInstanceUuid + "/queue/" + String(queuePosition),
                    method: .delete,
                    headers: self.headers
         ).validate().responseDecodable(of: Response.self) {
-            response in guard let deleteTrackFromQueueResponse = response.value else {completion(nil, response.error); return}
-            completion(deleteTrackFromQueueResponse, nil)
+            response in guard let removeTrackFromQueueResponse = response.value else {completion(nil, response.error); return}
+            completion(removeTrackFromQueueResponse, nil)
         }
     }
 }
