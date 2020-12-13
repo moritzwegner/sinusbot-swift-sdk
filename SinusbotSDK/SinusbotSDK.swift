@@ -464,7 +464,7 @@ public class SinusbotSDK {
         }
     }
     
-    public func appendTracktoQueue(botInstanceUuid: String, trackUuid: String, completion: @escaping (Response?, Error?) -> Void) {
+    public func appendTrackToQueue(botInstanceUuid: String, trackUuid: String, completion: @escaping (Response?, Error?) -> Void) {
         AF.request(self.host + "/api/v1/bot/i/" + botInstanceUuid + "/queue/append/" + trackUuid,
                    method: .post,
                    headers: self.headers
@@ -474,7 +474,7 @@ public class SinusbotSDK {
         }
     }
     
-    public func prependTracktoQueue(botInstanceUuid: String, trackUuid: String, completion: @escaping (Response?, Error?) -> Void) {
+    public func prependTrackToQueue(botInstanceUuid: String, trackUuid: String, completion: @escaping (Response?, Error?) -> Void) {
         AF.request(self.host + "/api/v1/bot/i/" + botInstanceUuid + "/queue/prepend/" + trackUuid,
                    method: .post,
                    headers: self.headers
