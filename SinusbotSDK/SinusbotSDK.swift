@@ -513,4 +513,14 @@ public class SinusbotSDK {
             completion(getScriptListResponse, nil)
         }
     }
+    
+    public func getRadioStations(searchString: String? = "", completion: @escaping (RadioStationsResponse?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/stations?q=" + searchString!,
+                   method: .get,
+                   headers: self.headers
+        ).validate().responseDecodable(of: RadioStationsResponse.self) {
+            response in guard let getRadioStationsResponse = response.value else {completion(nil, response.error); return}
+            completion(getRadioStationsResponse, nil)
+        }
+    }
 }
