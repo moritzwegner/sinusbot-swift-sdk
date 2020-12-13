@@ -68,7 +68,7 @@ somewhere in your code. Otherwise all other methods won't work
 | Queue -> Remove from queue                     |      ✅      |    ❌   | removeTrackFromQueue()                                        |
 | Radio -> Get radio stations                    |      ❌      |    ❌   |                                         |
 | Scripts -> Get Settings                        |      ❌      |    ❌   |                                         |
-| Scripts -> List Scripts                        |      ❌      |    ❌   |                                         |
+| Scripts -> List Scripts                        |      ✅      |    ❌   | getScriptList()                                        |
 | Scripts -> Save settings                       |      ❌      |    ❌   |                                         |
 | Streaming -> Get a token for the WebStream     |      ❌      |    ❌   |                                         |
 | Streaming -> Get audio stream                  |      ❌      |    ❌   |                                         |
