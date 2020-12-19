@@ -81,4 +81,4 @@ somewhere in your code. Otherwise all other methods won't work
 | Users -> Delete                                |      ✅      |    ❌   | deleteUser()                            |
 | Users -> List                                  |      ✅      |    ✅   | getUsers()                              |
 | Users -> Update Instance Privileges            |      ❌      |    ❌   |                                         |
-| Users -> Update                                |      ❌      |    ❌   |                                         |
+| Users -> Update                                |      ✅      |    ❌   | updateUser()                                        |
