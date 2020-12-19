@@ -47,8 +47,8 @@ somewhere in your code. Otherwise all other methods won't work
 | Playback -> Increase volume by 5%              |      ✅      |    ❌   | increaseVolumeBy5()                     |
 | Playback -> Pause Playback                     |      ✅      |    ❌   | pauseBotInstancePlayback()              |
 | Playback -> Playback URL                       |      ❌      |    ❌   |                                         |
-| Playback -> Playback a file inside a playlist  |      ❌      |    ❌   |                                         |
-| Playback -> Playback a file                    |      ❌      |    ❌   |                                         |
+| Playback -> Playback a file inside a playlist  |      ✅      |    ❌   | playbackFileInPlaylist()                                        |
+| Playback -> Playback a file                    |      ✅      |    ❌   | playbackFile()                                        |
 | Playback -> Say (TTS)                          |      ❌      |    ❌   |                                         |
 | Playback -> Seek                               |      ❌      |    ❌   |                                         |
 | Playback -> Set the volume                     |      ✅      |    ❌   | setBotInstanceVolume()                  |
