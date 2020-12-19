@@ -544,6 +544,18 @@ public class SinusbotSDK {
         }
     }
     
+    public func playbackSay(botInstanceUuid: String, playbackSayRequest: PlaybackSayRequest, completion: @escaping (Response?, Error?) -> Void) {
+        AF.request(self.host + "/api/v1/bot/i/" + botInstanceUuid + "/say",
+                   method: .post,
+                   parameters: playbackSayRequest,
+                   encoder: JSONParameterEncoder.default,
+                   headers: self.headers
+        ).validate().responseDecodable(of: Response.self) {
+            response in guard let playbackSayResponse = response.value else {completion(nil, response.error); return}
+            completion(playbackSayResponse, nil)
+        }
+    }
+    
     public func updateUser(userUuid: String, updateUserRequest: UpdateUserRequest, completion: @escaping (Response?, Error?) -> Void) {
         AF.request(self.host + "/api/v1/bot/users/" + userUuid,
                    method: .patch,
