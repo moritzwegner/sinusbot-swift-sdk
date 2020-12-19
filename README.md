@@ -49,7 +49,7 @@ somewhere in your code. Otherwise all other methods won't work
 | Playback -> Playback URL                       |      ❌      |    ❌   |                                         |
 | Playback -> Playback a file inside a playlist  |      ✅      |    ❌   | playbackFileInPlaylist()                                        |
 | Playback -> Playback a file                    |      ✅      |    ❌   | playbackFile()                                        |
-| Playback -> Say (TTS)                          |      ❌      |    ❌   |                                         |
+| Playback -> Say (TTS)                          |      ✅      |    ❌   |                                         |
 | Playback -> Seek                               |      ❌      |    ❌   |                                         |
 | Playback -> Set the volume                     |      ✅      |    ❌   | setBotInstanceVolume()                  |
 | Playback -> Stop Playback                      |      ✅      |    ❌   | stopBotInstancePlayback()               |
