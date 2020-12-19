@@ -50,7 +50,7 @@ somewhere in your code. Otherwise all other methods won't work
 | Playback -> Playback a file inside a playlist  |      ✅      |    ❌   | playbackFileInPlaylist()                                        |
 | Playback -> Playback a file                    |      ✅      |    ❌   | playbackFile()                                        |
 | Playback -> Say (TTS)                          |      ✅      |    ❌   | playbackSay()                                        |
-| Playback -> Seek                               |      ❌      |    ❌   |                                         |
+| Playback -> Seek                               |      ✅      |    ❌   | playbackSeek()                                        |
 | Playback -> Set the volume                     |      ✅      |    ❌   | setBotInstanceVolume()                  |
 | Playback -> Stop Playback                      |      ✅      |    ❌   | stopBotInstancePlayback()               |
 | Playback -> Recently played tracks             |      ✅      |    ❌   | getRecentPlayedTracksForBotInstance()   |
