@@ -121,10 +121,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8E4A4BEC256D07F700320D32 = {
+		4142C978294931AD00D6E97F /* SinusbotPlayground */ = {
 			isa = PBXGroup;
 			children = (
 				414F0DB6294518E10008837A /* Playground.playground */,
+			);
+			path = SinusbotPlayground;
+			sourceTree = "<group>";
+		};
+		8E4A4BEC256D07F700320D32 = {
+			isa = PBXGroup;
+			children = (
+				4142C978294931AD00D6E97F /* SinusbotPlayground */,
 				8E4A4BF8256D07F700320D32 /* SinusbotSDK */,
 				8E4A4C03256D07F700320D32 /* SinusbotSDKTests */,
 				8E4A4BF7256D07F700320D32 /* Products */,
