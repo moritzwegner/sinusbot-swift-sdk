@@ -89,6 +89,8 @@ fastlane/test_output
 
 iOSInjectionProject/
 
+SinusbotPlayground/
+
 ## Other
 *.xccheckout
 *.moved-aside
