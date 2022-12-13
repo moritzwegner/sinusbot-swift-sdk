@@ -18,7 +18,13 @@ Replace HOST, USERNAME and PASSWORD with your own values.
 
 Afterwards it's necessary to call 
 ```Swift
-sinusbotSDK.login()
+sinusbot.login {
+    (loggedIn, error) in if (loggedIn) {
+        // do something after successful login
+    } else if (error != nil) {
+        // do something with the error
+    }
+}
 ```
 somewhere in your code. Otherwise all other methods won't work
 
