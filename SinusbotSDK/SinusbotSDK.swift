@@ -35,17 +35,18 @@ public class SinusbotSDK {
             }
     }
     
-    public func login() {
+    public func login(completion: @escaping (Bool, Error?) -> Void) {
         self.fetchDefaultBotId {
-            (response, error) in guard let defaultBot = response else {return}
+            (response, error) in guard let defaultBot = response else {completion(false, error); return}
             let loginRequest = LoginRequest(username: self.username, password: self.password, botId: defaultBot.defaultBotId)
             
             AF.request(self.host + "/api/v1/bot/login",
                        method: .post,
                        parameters: loginRequest,
                        encoder: JSONParameterEncoder.default).responseDecodable(of: LoginResponse.self) {
-                        response in guard let loginResponse = response.value else {return}
-                        self.headers.add(name: "Authorization", value: "bearer " + loginResponse.token)
+                response in guard let loginResponse = response.value else {completion(false, response.error); return}
+                            self.headers.add(name: "Authorization", value: "bearer " + loginResponse.token)
+                            completion(true, nil);
                        }
         }
     }
