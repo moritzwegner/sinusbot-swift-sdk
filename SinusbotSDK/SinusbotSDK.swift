@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-public class SinusbotSDK {
+public class SinusbotSDK: ObservableObject {
     let host: String
     let username: String
     let password: String
